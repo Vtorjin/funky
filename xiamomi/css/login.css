@@ -1,0 +1,253 @@
+html,
+body,
+div,
+imf,
+h3,
+ul,
+li,
+a,
+p,
+fieldset,
+span,
+legend {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 1366px;
+  min-width: 620px;
+  background-color: #ddedaa;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.login {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.login_logo {
+  width: 230px;
+  height: 65px;
+  /* background-color: yellowgreen; */
+  margin: 25px 0 0 110px;
+  cursor: pointer;
+}
+
+.login_logo img {
+  float: left;
+  width: 50px;
+}
+.login_logo .login_logo_Info {
+  display: inline-block;
+  margin: -10px 0 0 20px;
+}
+.login_logo_Info h3 {
+  font-size: 34px;
+  font-weight: 500;
+  text-align: left;
+}
+
+.login_logo_Info p {
+  font-size: 6px;
+  font-weight: 600;
+  color: #424242;
+  /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+.login_body {
+  position: relative;
+  height: 512px;
+  background-image: url(../img/banner/banner5.jpg);
+  background-repeat: no-repeat;
+  cursor: pointer;
+  background-size: 100%;
+  cursor: pointer;
+}
+
+.login_body .login_box {
+  position: absolute;
+  right: 130px;
+  top: 12px;
+  width: 410px;
+  height: 500px;
+  /* margin: 6px 10 0 0px; */
+  background-color: #fff;
+  cursor: auto;
+  overflow: hidden;
+}
+
+/* 切换 */
+.login_box .tab {
+  display: block;
+  padding: 27px 0 24px;
+  text-align: center;
+  font-size: 24px;
+  /* background-color: #666; */
+}
+
+.login_box .tab a {
+  color: #666;
+  margin: 0 35px;
+  cursor: pointer;
+}
+
+.tab a:first-child {
+  color: #f56000;
+}
+
+.login_box .tab span {
+  display: inline-block;
+  width: 1px;
+  height: 36px;
+  margin-bottom: -12px;
+  border-left: 1px solid #e0e0e0;
+}
+
+/* 输入信息部分 */
+.login_body .show_tab {
+  width: 100%;
+  height: 230px;
+  /* padding-top: 10px; */
+  margin-top: 10px;
+  /* background-color: aquamarine; */
+}
+
+.show_tab .Info_login input,
+.Info_login .Mob_login {
+  display: block;
+  width: 348px;
+  height: 48px;
+  margin: 20px auto;
+}
+
+.show_tab .Info_login input[type="button"] {
+  width: 348px;
+  height: 48px;
+  text-align: center;
+  line-height: 48px;
+  background-color: #f56000;
+  color: #fff;
+  border: 1px solid #f56000;
+  cursor: pointer;
+}
+
+.Info_login .Mob_login a {
+  color: #ff6700;
+  font-size: 14px;
+}
+.Info_login .Mob_login span {
+  display: inline-block;
+  width: 2px;
+  height: 16px;
+  background-color: #666;
+  margin: 2px 10px;
+}
+
+.Info_login .Mob_login .other,
+.Info_login .Mob_login span {
+  float: right;
+}
+
+/* 其他登陆方式样式 */
+fieldset {
+  display: block;
+  height: 7px;
+}
+fieldset legend {
+  text-align: center;
+  color: #bbb;
+}
+.Info_login .logo_link {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.Info_login a .iconfont {
+  margin: 0 10px;
+  font-size: 30px;
+}
+
+/* 扫码登录部分 */
+.show_tab .scan_login {
+  height: 408px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.scan_login .scan_img {
+  position: relative;
+  width: 180px;
+  height: 180px;
+  color: #e0e0e0;
+  margin: 65px auto;
+}
+
+.scan_img img,
+.scan_img .wrong_Info {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.scan_img .wrong_Info {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.scan_img .wrong_Info p {
+  margin-top: 60px;
+  font-size: 20px;
+}
+.scan_img .wrong_Info input {
+  margin-top: 10px;
+  width: 64px;
+  height: 26px;
+  background-color: #f56000;
+  text-align: center;
+  border: 1px solid #f56000;
+  color: #e0e0e0;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.scan_login span {
+  color: #f56000;
+}
+/* 登陆主体结束 */
+/* 信息部分 */
+.login_footer {
+  height: 60px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.login_footer ul {
+  width: 100%;
+  height: 40px;
+}
+
+.login_footer ul li {
+  display: inline-block;
+  margin-top: 20px;
+  /* text-align: center; */
+}
+
+.login_footer ul li a {
+  margin: 0 10px;
+  color: #757575;
+}
+
+.login_footer p {
+  color: #757575;
+}

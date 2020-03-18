@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/iconfont2.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+
+
+</head>
+
+<body style="overflow:-Scroll;overflow-x:hidden">
+
+    <div class="login">
+        <div class="login_logo">
+            <img src="img/top/logo.jpg" alt="img/top/logo.jpg">
+            <div class="login_logo_Info">
+                <h3>小米商城</h3>
+                <p>让每个人都能享受科技的乐趣</p>
+            </div>
+        </div>
+        <div class="login_body">
+            <div class="login_box">
+
+                <div class="tab">
+                    <a herf="#" class="change show">账号登陆 </a>
+                    <span></span>
+                    <a href="#" class="change">扫码登录</a>
+                </div>
+
+                <div class="show_tab">
+                    <!-- 账号密码登陆 -->
+                    <div class="Info_login one">
+                        <input type="text" placeholder="邮箱/手机号/小米ID">
+                        <input type="password" min="8" max="15" placeholder="请输入密码">
+                        <input type="button" value="登陆">
+
+                        <!-- 其他登陆方式 -->
+                        <div class="Mob_login">
+                            <a href="javascript:;">手机短信登录/注册</a>
+                            <a href="javascript:;" class="other">忘记密码？</a>
+                            <span></span>
+                            <a href="javascript:;" class="other">立即注册</a>
+
+                        </div>
+
+                        <fieldset class="other_login">
+                            <legend>其他方式登陆</legend>
+                        </fieldset>
+                        <div class="logo_link">
+                            <a href="javascript:;">
+                                <i class="iconfont" style="color:#f40 ;">&#xe6ff;</i>
+                            </a>
+                            <a href="javascript:;">
+                                <i class="iconfont" style="color: #0ae;">&#xe651;</i>
+                            </a>
+                            <a href="javascript:;">
+                                <i class="iconfont" style="color:  #0F0;">&#xe655;</i>
+                            </a>
+                            <a href="javascript:;">
+                                <i class="iconfont" style="color: #028dd1;">&#xe60d;</i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- 扫码登录 -->
+                    <div class="scan_login one" style="display: none;">
+                        <div class="scan_img">
+                            <img src="img/下载.png" alt="">
+                            <div class="wrong_Info">
+                                <p>二维码过期</p>
+                                <input type="button" name="" id="" value="重试">
+                            </div>
+
+                        </div>
+                        <p>使用小米 <span>商城APP</span> 扫一扫 </p>
+                        <p>小米手机可打开「设置」>「小米帐号」扫码登录</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 信息部分 -->
+        <div class="login_footer">
+            <ul>
+                <li><a href="#" style="color:#333">简体</a> <span>|</span></li>
+                <li><a href="#">繁体</a><span>|</span></li>
+                <li><a href="#">English</a><span>|</span></li>
+                <li><a href="#">常见问题</a><span>|</span></li>
+                <li><a href="#">隐私政策</a></li>
+            </ul>
+            <p>小米公司版权所有-京ICP备10046444-京公网安备11010802020134号-京ICP证110507号</p>
+        </div>
+    </div>
+
+    <script>
+        var tab = document.querySelectorAll(".change");
+        var show = document.querySelectorAll(".one");
+        for (var i = 0; i < tab.length; i++) {
+            tab[i].index = i;
+            tab[i].onclick = function () {
+                console.log(this);
+                for (var j = 0; j < tab.length; j++) {
+                    show[j].style.display = "none";
+                    tab[j].style.color = "#666";
+                }
+                show[this.index].style.display = "block";
+                tab[this.index].style.color = "#F56000";
+            }
+
+        }
+    </script>
+</body>
+
+</html>

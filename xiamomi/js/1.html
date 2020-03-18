@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <script>
+        //     function A() {
+
+        //         this.num = 20;
+        //         A.prototype.num = 21;
+        //     }
+
+        //     Object.prototype.num = 19;
+        //     var aa = new A();
+        //     console.log(aa.num); //20
+
+        function Word(words) {
+            this.words = words;
+            Word.prototype = {
+                alert() {
+                    this.words
+                }
+            }
+        }
+        var w = new Word("hello word");
+        console.log(w.words);
+        console.log(this);
+
+        // 
+        // (function () {
+        //     var x = foo();
+        //     var foo = function foo() {
+        //         return "foobar"
+        //     };
+        //     // console.log(x);
+        //     return x //foo is not a function 
+        // })();
+
+        
+        console.log((-true + Object));//-1function Object() { [native code] }
+        console.log(typeof (-true + Object));
+        console.log(-true + "0"); //-10
+        console.log(true + true);
+        console.log(true + false);
+    </script>-->
+    <div class="over" style="background-color:lightgray;padding:20px;width:40%;float:left">
+        <h2 style="background-color:white;">被触发的 Mouseover 事件：<span></span></h2>
+    </div>
+
+    <div class="enter" style="background-color:lightgray;padding:20px;width:40%;float:right">
+        <span style="background-color:rebeccapurple;">被触发的 Mouseenter 事件：<span></span></span>
+
+        <script src="../js/jquery-3.3.1.min.js"></script>
+        <script>
+            var x = 0;
+            var y = 0;
+            $(document).ready(function () {
+                $("div.over").mouseover(function () {
+                    $(".over span").text(x += 1);
+
+                });
+                $("div.enter").mouseenter(function () {
+                    $(".enter span").text(y += 1);
+
+                });
+
+            });
+        </script>
+
+</body>
+
+
+</html>
